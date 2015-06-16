@@ -9,8 +9,12 @@ public class Prog_C {
 		
 		int n=IO.readInt("Anzahl der Ergebnisse: ");
 		
-		for (int i=1; i<=n; i++)
+		IO.println();
+		
+		for (int i=1; i<=n; i++) {
 			tipp();
+			IO.println();
+		}
 
 	}
 	
