@@ -13,10 +13,18 @@ public class Prog_C {
 	
 	static void tipp() {
 		Random zufall=new Random();
-		int temp;
+		int[] zahl = new int[6];
 		for (int i=0; i<=5; i++) {
-			temp=zufall.nextInt(45)+1;
-			IO.print(temp,3);
+			zahl[i]=zufall.nextInt(45)+1;
+			for (int j=0; j<i;j++)
+				if (zahl[i]==zahl[j]) {
+					i--;
+					break;
+				}
+		}
+		
+		for (int i=0; i<=5; i++) {
+			IO.print(zahl[i],3);
 		}
 	}
 
