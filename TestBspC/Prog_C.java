@@ -7,7 +7,10 @@ public class Prog_C {
 		
 		IO.println("\n\tHerzlich Willkommen!\n\n");
 		
-		tipp();
+		int n=IO.readInt("Anzahl der Ergebnisse: ");
+		
+		for (int i=1; i<=n; i++)
+			tipp();
 
 	}
 	
