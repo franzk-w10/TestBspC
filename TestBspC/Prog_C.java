@@ -15,6 +15,8 @@ public class Prog_C {
 			tipp();
 			IO.println();
 		}
+		
+		IO.println("\n\tHave a nice Day");
 
 	}
 	
